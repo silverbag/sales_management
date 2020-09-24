@@ -1,0 +1,21 @@
+<%= render "shared/header" %> 
+<div class='title-contents'>
+    <span>顧客一覧</span>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>customer-name</th>
+            <th>Phase</th>
+            <th>position</th>
+        </tr>
+    </table>
+    <table>
+      <tr>
+          <td><%= @lead.company %></td>
+          <td><%= @lead.customer_name %></td>
+          <td><%= @lead.category.name %></td>
+          <td><%= @lead.position %></td>
+      </tr>
+    </table>
+      <%= link_to '編集', edit_lead_path(@lead.id), method: :get, class: 'btn-text' %>
+      <%= link_to '削除', lead_path(@lead.id), method: :delete, class:'btn-text' %>

@@ -40,19 +40,16 @@ Things you may want to cover:
 | Column            | Type   | Options     |
 | customer_name     | string | null: false |
 | company           | string | null: false |
-| position          | text   | null: false |
+| position          | string   | null: false |
 
 - belongs_to :user
 
-<!-- ## phase テーブル
+## comment テーブル
 
-| Column            | Type   | Options     |
-| prospect          | string | null: false |
-| investigation     | string | null: false |
-| proposalmade      | text   | null: false |
-| negociation       | text   | null: false |
-| closed            | text   | null: false |
+| Column            | Type     | Options     |
+| text          | string       | null: false |
+| user_id       | references   | foreign_key: true |
+| lead_id       | references   | foreign_key: true |
 
-- belongs_to :user -->
-
- 
+- belongs_to :user
+- belongs_to :lead

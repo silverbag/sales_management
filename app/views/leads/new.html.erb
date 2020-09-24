@@ -1,0 +1,53 @@
+<%= render "shared/header" %>
+<%= form_with url: leads_path, local: true do |f| %>
+
+<div class="box">
+  <div class="box-inner">
+      <h1>顧客登録</h1>
+      <div class="box-password">
+        <div class="a-row">
+          <div class="column-left">
+          <label class="form-text">顧客名</label>
+          </div>
+        </div>
+        <div class="input-box">
+        <%= f.text_field :customer_name, class:"input-box", autocomplete: "current-password" %>
+        </div>
+      </div>
+      
+      <div class="box-password">
+        <div class="a-row">
+          <div class="column-left">
+          <label class="form-text">会社名</label>
+          </div>
+        </div>
+        <div class="input-box">
+        <%= f.text_field :company, class:"input-box", autocomplete: "current-password" %>
+        </div>
+      </div>
+
+      <div class="box-password">
+        <div class="a-row">
+          <div class="column-left">
+            <label class="form-text">役職</label>
+          </div>
+        </div>
+        <div class="input-box">
+          <%= f.text_field :position, class:"input-box", autocomplete: "current-password" %>
+        </div>
+      </div>
+
+      <div class="box-password">
+        <div class="a-row">
+          <div class="column-left">
+          <label class="form-text">フェーズ</label>
+          </div>
+        </div>
+        <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+      </div>
+      <div class="box-login">
+        <%= f.submit "顧客新規登録" %>
+      </div>
+  </div>
+</div>
+<% end %>

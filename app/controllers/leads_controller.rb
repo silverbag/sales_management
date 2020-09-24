@@ -1,6 +1,7 @@
 class LeadsController < ApplicationController
-
+  skip_before_action :authenticate_user!, only: [:index]
   def index
+    @leads = Lead.all
   end
 
   def new
@@ -16,9 +17,28 @@ class LeadsController < ApplicationController
     end
   end
 
-  def edit
-    
+  def update
+    lead = Lead.find(params[:id])
+    lead.update(leads_params)
+    if lead.save
+      redirect_to root_path
+    else
+      render :show
+    end
   end
+
+  def edit
+    @lead = Lead.find(params[:id])
+  end
+
+  def search
+    @lead = SearchItemsService.search(params[:investigate])
+  end
+
+  def show
+    @lead = Lead.find(params[:id])
+  end
+
 
   private
 
