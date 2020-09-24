@@ -1,5 +1,5 @@
 <%= render "shared/header" %>
-<%= form_with url: leads_path, local: true do |f| %>
+<%= form_with url: lead_path, method: :patch, local: true do |f| %>
 
 <div class="box">
   <div class="box-inner">
@@ -46,9 +46,8 @@
         <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
       </div>
       <div class="box-login">
-        <%= f.submit "顧客新規登録" %>
+        <%= f.submit "更新" %>
       </div>
   </div>
 </div>
 <% end %>
-
