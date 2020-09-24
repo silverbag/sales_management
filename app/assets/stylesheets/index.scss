@@ -84,10 +84,38 @@ table td.icon.crab{
   max-width: 250px;
   padding: 0.6em 1.5em 0.6em 0.5em; 
 }
+
+.item-box {
+  background-color: #FFF;
+  width: 5vw;
+  min-width: 1200px;
+  padding: 10vh 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .btn-text {
+    text-align: center;
+    background-color: #C0C0C0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0px;
+    padding: 2vh 10vw;
+}
+
+.detail-btn-text {
+  background-color: #C0C0C0;
+  font-size: 12px;
+  font-weight: bold;
   color: #333;
-  display: block;
-  font-size: 18px;
-  text-decoration: none;
-  margin-bottom: 5px;
+  margin: 20px 0px;
+  padding: 1vh 1vw;
+}
+
+
+.container {
+  width: 25%;
+  padding: 20px;
 }

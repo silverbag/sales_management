@@ -37,12 +37,14 @@ class LeadsController < ApplicationController
 
   def show
     @lead = Lead.find(params[:id])
+    @comment = Comment.new
+    @comments = @lead.comments.includes(:user)
   end
 
 
   private
 
   def leads_params
-    params.permit(:customer_name, :company, :position, :category_id)
+    params.permit(:customer_name, :company, :position, :category_id).merge(user_id: current_user.id)
   end
 end

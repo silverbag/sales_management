@@ -17,5 +17,27 @@
           <td><%= @lead.position %></td>
       </tr>
     </table>
+
+      <h4>＜コメント一覧＞</h4>
+
+  <div class="container">
+      <%= form_with(model: [@lead, @comment], local: true) do |f| %>
+        <%= f.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= f.submit "SEND" %>
+  </div>
+  
+  <div class="comments">
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+            <%= comment.user.name %>：<%= comment.text %>
+          </p>
+        <% end %>
+      <% end %>
+    </div>
+  <div class="item-box">
       <%= link_to '編集', edit_lead_path(@lead.id), method: :get, class: 'btn-text' %>
       <%= link_to '削除', lead_path(@lead.id), method: :delete, class:'btn-text' %>
+  </div>
+<% end %>
+
