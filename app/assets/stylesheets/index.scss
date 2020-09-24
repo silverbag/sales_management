@@ -1,0 +1,86 @@
+
+.title-contents {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 15vw;
+  color: #333;
+  background-color: #FFFFFF;
+}
+
+.mav {
+  font-size: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1vh 0;
+}
+
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table tr{
+  border-bottom: solid 1px #eee;
+  cursor: pointer;
+}
+
+table tr:hover{
+  background-color: #d4f0fd;
+}
+
+table th,table td{
+  text-align: center;
+  width: 25%;
+  padding: 15px 0;
+}
+
+table td.icon{
+  background-size: 35px;
+  background-position: left 5px center;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+table td.icon.bird{
+  background-image: url(icon-bird.png)
+}
+
+table td.icon.whale{
+  background-image: url(icon-whale.png)
+}
+
+table td.icon.crab{
+  background-image: url(icon-crab.png)
+}
+.purchase-btn {
+  width: 120px;
+  background: #215ca0;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.customer-btn-text {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.select-box {
+  width: 100%;
+  max-width: 250px;
+  padding: 0.6em 1.5em 0.6em 0.5em; 
+}

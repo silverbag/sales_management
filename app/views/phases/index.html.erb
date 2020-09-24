@@ -1,0 +1,29 @@
+<%= render "shared/header" %>
+<div class='title-contents'>
+    <span>顧客一覧</span>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>customer-name</th>
+            <th>Phase</th>
+            <th>position</th>
+        </tr>
+    </table>
+    <table>
+        <% @lead.each do |lead|%>
+        <%= link_to phase_path(lead) do %>
+            <tr>
+                <td><%= lead.company %></td>
+                <td><%= lead.customer_name %></td>
+                <td><%= lead.category.name %></td>
+                <td><%= lead.position %></td>
+            </tr>
+        <% end %>
+        <% end %>
+    </table>
+    <div class='purchase-btn'>
+          <span>
+          <%= link_to '顧客登録',new_phase_path, class: 'customer-btn-text' %>
+          </span>
+    </div>
+</div>

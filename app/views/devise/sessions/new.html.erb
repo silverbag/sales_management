@@ -1,0 +1,43 @@
+<%= render "shared/header" %>
+<%= form_with model: @user, url: user_session_path, class: 'registration-main', local: true do |f| %>
+  <div class="box">
+    <div class="box-inner">
+        <h1>アカウントログイン</h1>
+
+        <%= render 'shared/error_messages', model: f.object %>
+
+        <div class="box-password">
+          <div class="a-row">
+            <div class="column-left">
+            <label class="form-text">名前</label>
+            </div>
+          </div>
+          <%= f.text_field :name, autocomplete: "current-password" %>
+        </div>
+        <div class="box-email">
+          <%= f.label :email, "Eメール" %><br />
+          <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+        </div>
+        <div class="box-password">
+          <div class="a-row">
+            <div class="column-left">
+              <%= f.label :password, "パスワード" %>
+            </div>
+          </div>
+          <%= f.password_field :password, autocomplete: "current-password" %>
+        </div>
+
+        <div class="box-login">
+          <%= f.submit "ログイン" %>
+          <div class="legal-text">
+            続行することで、sales_managementの
+            <%= link_to "利用規約", "#" %>
+            および
+            <%= link_to "プライバシー規約", "#" %>
+            に同意するものとみなされます。
+          </div>
+        </div>
+    </div>
+  </div>
+<% end %>
+
