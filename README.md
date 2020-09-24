@@ -33,7 +33,7 @@ Things you may want to cover:
 
 ### Association
 
-- has_many :leads
+- has_many :comments
 
 ## lead テーブル
 
@@ -42,7 +42,7 @@ Things you may want to cover:
 | company           | string | null: false |
 | position          | string   | null: false |
 
-- belongs_to :user
+- belongs_to :comments
 
 ## comment テーブル
 
