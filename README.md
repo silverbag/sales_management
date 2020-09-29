@@ -9,7 +9,7 @@ which has bottleneck because salesforce manages customer in phase.
 most japanease company manages customer in different method.
 
 
-* Description
+* Description<br>
 既存SaaSソフトウェア(salesforce)は顧客が営業フェーズによる管理になっており慣れないと使いづらい。
 また新規担当エリアや新規社員にとって既存顧客の情報が頭に入っていない状態で営業を行うとフェーズ意外の顧客について忘れがちになってしまう。
 そのため基本ベースはsalesforceで管理しつつ、サブ的要素としてsalesforceを補助できるソフトウェアがあれば嬉しいなと思い開発した。
@@ -19,7 +19,7 @@ because japanease sales team has different sales management.
 this　tool is a auxiliary role to salesforce.
 it is possible to use salesforce smoothly japanease sales team.
 
-* Usage
+* Usage<br>
 とてもシンプルな使い方。
 顧客登録から重要な顧客を登録しコメントを残す。
 基本的にはsalesforceによりフェーズ管理をしていくのでその中でも別に記録しておきたいことや上司に報告するまでもないことなどを記録する。
@@ -27,8 +27,8 @@ it is possible to use salesforce smoothly japanease sales team.
 it is bery simple to use.
 register important customer from customer register botton and leave comment.
 
-* Requirement
-ruby 
+* Requirement <br>
+ruby 2.6.5
 
 
 ### User
