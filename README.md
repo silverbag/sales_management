@@ -30,6 +30,9 @@ register important customer from customer register botton and leave comment.
 * Requirement <br>
 ruby 2.6.5
 
+* デプロイ URL <br>
+https://sales-management-28698.herokuapp.com/
+
 
 ### User
 
