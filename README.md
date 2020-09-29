@@ -32,6 +32,8 @@ ruby 2.6.5
 
 * デプロイ URL <br>
 https://sales-management-28698.herokuapp.com/
+test ID example@hoge.com
+password a1a1a1
 
 
 ### User
