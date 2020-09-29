@@ -1,7 +1,7 @@
 # README
 # sales_management(h1)
 
-このツールはsalesforceなどを導入する際にネックとなるフェーズ管理にスムーズに移行できるように
+このツールは顧客のフェーズ毎の管理に、スムーズに移行できるようにするためのツールである。
 salesforceの補助的役割を持っている
 
 this tool helps to smoothly transition to salesforce.
