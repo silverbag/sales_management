@@ -11,7 +11,7 @@ most japanease company manages customer in different method.
 
 * Description<br>
 既存SaaSソフトウェア(salesforce)は顧客が営業フェーズによる管理になっており慣れないと使いづらい。
-また新規担当エリアや新規社員にとって既存顧客の情報が頭に入っていない状態で営業を行うとフェーズ意外の顧客について忘れがちになってしまう。
+また新規担当エリアや新規社員にとって既存顧客の情報が頭に入っていない状態だと、今やるべきことに精一杯になってしまい他の顧客について忘れがちになってしまう。
 そのため基本ベースはsalesforceで管理しつつ、サブ的要素としてsalesforceを補助できるソフトウェアがあれば嬉しいなと思い開発した。
 
 salesforce is difficult to use a japanease company.
