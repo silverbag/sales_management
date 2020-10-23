@@ -1,27 +1,40 @@
 # README
+# sales_management(h1)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+このツールは顧客のフェーズ毎の管理に、スムーズに移行できるようにするためのツールである。
+salesforceの補助的役割を持っている
 
-Things you may want to cover:
+this tool helps to smoothly transition to salesforce.
+which has bottleneck because salesforce manages customer in phase.
+most japanease company manages customer in different method.
 
-* Ruby version
 
-* System dependencies
+* Description<br>
+既存SaaSソフトウェア(salesforce)は顧客が営業フェーズによる管理になっており慣れないと使いづらい。
+また新規担当エリアや新規社員にとって既存顧客の情報が頭に入っていない状態だと、今やるべきことに精一杯になってしまい他の顧客について忘れがちになってしまう。
+そのため基本ベースはsalesforceで管理しつつ、サブ的要素としてsalesforceを補助できるソフトウェアがあれば嬉しいなと思い開発した。
 
-* Configuration
+salesforce is difficult to use a japanease company.
+because japanease sales team has different sales management.
+this　tool is a auxiliary role to salesforce.
+it is possible to use salesforce smoothly japanease sales team.
 
-* Database creation
+* Usage<br>
+とてもシンプルな使い方。
+顧客登録から重要な顧客を登録しコメントを残す。
+基本的にはsalesforceによりフェーズ管理をしていくのでその中でも別に記録しておきたいことや上司に報告するまでもないことなどを記録する。
 
-* Database initialization
+it is bery simple to use.
+register important customer from customer register botton and leave comment.
 
-* How to run the test suite
+* Requirement <br>
+ruby 2.6.5
 
-* Services (job queues, cache servers, search engines, etc.)
+* デプロイ URL <br>
+https://sales-management-28698.herokuapp.com/<br>
+test ID example@hoge.com<br>
+password a1a1a1<br>
 
-* Deployment instructions
-
-* ...
 
 ### User
 
