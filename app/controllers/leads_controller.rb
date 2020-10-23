@@ -41,6 +41,15 @@ class LeadsController < ApplicationController
     @comments = @lead.comments.includes(:user)
   end
 
+  def destroy
+    @lead = Lead.find(params[:id])
+    if @lead.destroy
+      redirect_to root_path
+    else
+      render :show
+    end
+  end
+
 
   private
 
